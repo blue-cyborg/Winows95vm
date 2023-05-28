@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Windows 95 Virtual Machine and Memories</title>
+  </head>
+  <body>
+    <div class="main container">
+    <h1>Windows 95 Virtual Machine and Memories</h1>
+    <p class="first mt-4">
+      Oh, to be a 90s kid. The Windows 95 operating system (os) was a life-changing 
+      experience for many of us. I loved the Windows 95 os, which was a huge and special 
+      part of my formative years. In recent years I've been tempted to snag an original 
+      machine again. However, virtual machines (VM) have also intrigued me. 
+    </p>
+    <h2>What is a Virtual Machine?</h2>
+    <p>A VM is an emulation of an actual computer. There isn't a tangible physical 
+      computer; it is an entirely software-defined system. I run my Windows 95 off my main 
+      Windows 10 rig. So, my Windows 95 computer exists inside my Windows 10 computer! My 
+      Windows 95 exists purely as code and runs independently from my Windows 10. My VM is
+      partitioned on my rig's hard drive and therefore does not interfere with my host 
+      machine running Windows 10. I've had fun building other VMs. I have one running 
+      Ubuntu, and I'm considering trying my hand at a Linux Mint VM. Thanks to the 
+      partitions, there isn't ever any interference.</p>
+      <h2>Why do people make Virtual Machines?</h2>
+      <p>Part of my reasons for not snagging an old-school Windows 95 is that my house 
+      only has so much physical space, which is why companies use virtual machines. 
+      Reducing physical space and hardware can equal cost savings in the real world. If 
+      you find this intriguing and want more information on virtual machines, <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-a-virtual-machine/" target="_blank">Microsoft 
+      has an overview of the subject.</a> Microsoft listed five reasons people use VMs which 
+      are:</p>
+      <ul>
+        <li><strong>Cost savings</strong>—running multiple virtual environments from one piece of 
+          infrastructure means that you can drastically reduce your physical 
+          infrastructure footprint. This boosts your bottom line—decreasing the need to 
+          maintain nearly as many servers and saving on maintenance costs and 
+          electricity.</li>
+        <li><strong>Agility and speed</strong>—Spinning up a VM is relatively easy and quick and is much 
+          simpler than provisioning an entire new environment for your developers. 
+          Virtualization makes the process of running dev-test scenarios a lot quicker.</li>
+        <li><strong>Lowered downtime</strong>—VMs are so portable and easy to move from one hypervisor to another on a different machine—this means that they are a great solution for backup, in the event the host goes down unexpectedly.</li>
+        <li><strong>Scalability</strong>—VMs allow you to more easily scale your apps by adding more physical or virtual servers to distribute the workload across multiple VMs. As a result you can increase the availability and performance of your apps.</li>
+        <li><strong>Security benefits</strong>— Because virtual machines run in multiple operating systems, using a guest operating system on a VM allows you to run apps of questionable security and protects your host operating system. VMs also allow for better security forensics, and are often used to safely study computer viruses, isolating the viruses to avoid risking their host computer.</li>
+      </ul>
+      <h2>Nostalgia</h2>
+      <p>A reason not listed in Microsoft's above five points is nostalgia. When I found 
+        fellow techies making VMs, I found many were making a VM for a beloved childhood 
+        OS. This was mine. I really enjoyed learning how to make VMs and have made more 
+        since. Also, I saw other people who loved learning about computers and seeing how 
+        far they have improved over the decades. Anytime I go back to an old OS, I have 
+        to approach it differently than a modern, more intuitive one.</p>
+        <h2>Try a VM!</h2>
+        <p>If you want a fun weekend project and a chance to try your hand at something 
+          new, try making a VM. Making a VM is a valuable tool to have in the tech person's 
+          toolbox. What you'll want to do is get <a href="https://www.virtualbox.org/" target="_blank">Oracle VM VirtualBox</a>. It is an open-source 
+          program free to download. Internet Archive has been a valuable resource for files 
+          like nabbing old operating systems. See if you can get some current video tutorials 
+          on YouTube. <a href="https://www.howtogeek.com/329301/how-to-install-windows-95-in-a-virtual-machine/" target="_blank">This How to Geek tutorial is pretty good.</a> You're going to need a 
+          Windows 95 iso file from <a href="https://archive.org/search?query=windows+95+2.5" target="_blank">the internet archive</a>. An iso file is an image of the 
+          operating system. Try to find an OSR version 2.5 when looking for your image 
+          file. No matter what you download 111-1111111 will be a valid product key. If you want to hear why <a href="https://www.youtube.com/watch?v=cwyH59nACzQ" target="_blank">this video is rad.</a></p>
+          <p>What made it frustrating for me was a lot of tutorials failed to say you're 
+            going to need one more file. <a href="https://archive.org/details/fix-95-cpu" target="_blank">This file is the fix 95 CPU file.</a> Old CPUs ran 
+            at slower speeds than whatever you have currently. This file makes running 
+            Windows 95 on your modern CPU possible. Many tutorials left this nugget out, 
+            so it took me all weekend, a bunch of coffee, candy, and scouring the internet 
+            to solve it. I wasn't going to stop until I solved this. After discovering this 
+            file, I ran wild in my old os and relived all my fond memories in no time. 
+            You can keep searching around the internet archive to find files of the games 
+            you liked. </p>
+          <p class="final mb-5">Final tip: I'm going to say stay organized with all your files for this 
+            project. I have on my Windows 10 desktop a folder titled Win95. I've kept all 
+            my files halfway organized should anything ever go awry. Also, I keep my 
+            virtual software disks in there. Should I want to play Spider-Man Cartoon 
+            Maker, I put the virtual disk in the virtual drive and launch the program. If I
+            had my files kicking in different places, playing the games I love wouldn't be 
+            easy. Make dedicated folders for whatever operating systems you're playing with,
+            and keep your files for that OS all in one place. I do the same for Linux Ubuntu.</p>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        ></button
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="7"
+          aria-label="Slide 8"
+        ></button
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="8"
+          aria-label="Slide 9"
+        ></button
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="9"
+          aria-label="Slide 10"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="10"
+          aria-label="Slide 11"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="11"
+          aria-label="Slide 12"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="12"
+          aria-label="Slide 13"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="13"
+          aria-label="Slide 14"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="14"
+          aria-label="Slide 15"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="15"
+          aria-label="Slide 16"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="16"
+          aria-label="Slide 17"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="17"
+          aria-label="Slide 18"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="18"
+          aria-label="Slide 19"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="19"
+          aria-label="Slide 20"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="20"
+          aria-label="Slide 21"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="21"
+          aria-label="Slide 22"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="22"
+          aria-label="Slide 23"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="23"
+          aria-label="Slide 24"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="24"
+          aria-label="Slide 25"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="25"
+          aria-label="Slide 26"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="26"
+          aria-label="Slide 27"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="27"
+          aria-label="Slide 28"
+        ></button>
+        ><button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="28"
+          aria-label="Slide 29"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col">
+              <img src="/images/desktop.png" class="d-block w-60" alt="Windows 95 Desktop" />
+            </div>
+            <div class="col">
+              <h2 class="description">It booted!</h2>
+              <p class="description">
+                Sometimes it takes a little work. Remember this desktop. 
+                The audio doesn't even need to be turned up. Just looking at this image, 
+                I hear that wonderful opening music by Brian Eno. Pure Nostolgia! For 
+                the nerds out there--yes, I have it emulating that sweet sweet SoundBlaster
+                16 audio card! It makes games sound awesome. I'm not quite a digital native, 
+                as I was born in the 1980s, but this was my childhood. The glow of this screen, 
+                plus my imagination, could take me anywhere. As I've gotten older, I've never 
+                wanted to lose that sense of wonder. I still see computers with those lenses.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="/images/error.png" class="d-block w-60" alt="Windows 95 Error" />
+            </div>
+            <div class="col">
+              <h2 class="description">
+                Sometimes getting to the desktop takes work
+              </h2>
+              <p class="description">Hello old friend!</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img
+                src="/images/errorscandisk.png"
+                class="d-block w-60"
+                alt="Windows 95 scan disk error"
+              />
+            </div>
+            <div class="col">
+              <h2 class="description">
+                Sometimes getting to the desktop takes work
+              </h2>
+              <p class="description">
+                *sigh* If you were there, remember scan disk after an error?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="/images/free aol.png" class="d-block w-60" alt="Windows 95 start menu showing free AOL" />
+            </div>
+            <div class="col">
+              <h2 class="description">Ooooh free AOL!!!</h2>
+              <div class="intro ">
+              <p class="description">
+                Oh man, how could anyone ever say no to this? For a lot of us, this was 
+                our first go at hearing a dial-up modem and getting online. AOL also liked 
+                bombing everyone's physical mailboxes with diskettes and then CDs. At one 
+                point as a kid, I liked saving the cds to do art projects with. Hello, 
+                pretending I was a rich pop star who was just awarded gold and platinum 
+                records. I can't go on the modern internet with my Windows 95 virtual box. 
+                So many protocols have changed since. It's fun to check out YouTubers who 
+                get some sites running thanks to the wayback machine.
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img
+                src="/images/Entertainment Package.png"
+                class="d-block w-60"
+                alt="Microsoft Entertainment Package listed on start menu"
+              />
+            </div>
+            <div class="col">
+              <h2 class="description">Microsoft Entertainment Packages</h2>
+              <p class="description">
+              These were awesome. Microsoft Entertainment Packages had a handful of games. 
+              I'm downloading the different diskette images from the internet archive. 
+              I'm finding a bunch of Windows 95 software there for free. I remember a lot of
+              these games. I put so many hours into Rodents Revenge.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="/images/ski free1.png" class="d-block w-60" alt="ski dude" />
+            </div>
+            <div class="col">
+              <h2 class="description">Ski Free</h2>
+              <p class="description">
+                I was big into Ski Free too. All you do is make your ski dude go
+                down the slopes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="/images/ski free2.png" class="d-block w-60" alt="ski dude was eaten by yeti" />
+            </div>
+            <div class="col">
+              <h2 class="description">Ski Free</h2>
+              <p class="description">
+                After a few minutes you would always get chomped by the yeti.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="/images/works.png" class="d-block w-60" alt="Microsoft Works 4.0" />
+            </div>
+            <div class="col">
+              <h2 class="description">Microsoft Works 4.0</h2>
+              <p class="description">
+                Before Microsoft Office, there was Microsoft Works. Many of us
+                used it for our school projects. I also used it to play fancy
+                luncheon as a kid and print menus. Those grilled cheese
+                sandwiches needed fancy elegant menus before I served them on
+                very 80s dishes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img
+                src="/images/microsoft works.png"
+                class="d-block w-60"
+                alt="Microsoft Works word processor"
+              />
+            </div>
+            <div class="col">
+              <h2 class="description">Word Processor</h2>
+              <p class="description">
+                This is the word processor part. You can see how this, in a lot of ways, 
+                its just an earlier incarnation of the Microsoft Word that we use now. 
+                It seems like everyone used that duck clip art when joking about computer 
+                issues. It was one of my favorite pieces to throw into stuff when I could 
+                get away with it. I’m determined to bring it back for the 2020s!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="/images/clip art.png" class="d-block w-60" alt="old school clip art" />
+            </div>
+            <div class="col">
+              <h2 class="description">Word Processor</h2>
+              <p class="description">
+                I would spend hours going through the clip art as a kid.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/spreadsheets.png"
+              class="d-block w-60"
+              alt="spreadsheet"
+            />
+          </div>
+          <div class="col">
+            <h2 class="description">Word Processor</h2>
+            <p class="description">
+              This is the spreadsheet part. It's not all that different from its modern 
+              counterpart, Microsoft Excel. I remember adults using it for budgeting and 
+              keeping track of what got paid. I didn't play around over here much as a kid.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/date_time.png" class="d-block w-60" alt="Windows 95 date and time setting" />
+          </div>
+          <div class="col">
+            <h2 class="description">System Settings</h2>
+            <p class="description">
+              I had to mess with the settings. That sweet sweet Windows 95 look. 
+              It's funny seeing 2023 plugged into the date. I never thought I'd see that.
+              It was a very visually appealing OS. I also had to pull up the
+              pipe screensaver and the maze one.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/Mighty Math.png" class="d-block w-60" alt="Mighty Math Calculating Crew" />
+          </div>
+          <div class="col">
+            <h2 class="description">Now that's what I call edutainment!</h2>
+            <p class="description">
+              The edutainment games from Edmark were dope. I loved the Mighty Math 
+              Calculating Crew! You get to help superheroes do math. I loved comic books, 
+              and it was a cool premise.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/geometry lab.png"
+              class="d-block w-60"
+              alt="A very 90s geometry lab"
+            />
+          </div>
+          <div class="col">
+            <h2 class="description">Mighty Math</h2>
+            <p class="description">
+              The best part was the geometry lab. Can this look more 90s?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt2.png" class="d-block w-60" alt="Thinkin' Things Collection 2" />
+          </div>
+          <div class="col">
+            <h2 class="description">Thinkin' Things Collection 2</h2>
+            <p class="description">
+              This was another rad Edmark game. It encouraged thinking and fun!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt3.png" class="d-block w-60" alt="Thinkin' Things Collection 3" />
+          </div>
+          <div class="col">
+            <h2 class="description">There was a third too!</h2>
+            <p class="description">
+              I never had it as a kid, and I wanted it. The massive big box for Thinkin’ 
+              Things Collection 2 sat atop the computer desk and advertised it in full 
+              glory. I love being an adult and playing it now for free because it is 
+              abandonware on the internet archive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt3fripple.png" class="d-block w-60" alt="Thinkin' Things 3 fripples" />
+          </div>
+          <div class="col">
+            <h2 class="description">Fripple Party!</h2>
+            <p class="description">
+              Here is a screenshot of the Thinkin' Things. I still love the
+              fripples. They were zany, nonsense, with adorable voices who
+              needed help. In this pic, I had to problem-solve and sort them by
+              category.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt2art.png" class="d-block w-60" alt="Thinkin' Things art game" />
+          </div>
+          <div class="col">
+            <h2 class="description">Let's Make Art!</h2>
+            <p class="description">
+              I loved the art games that also had problem solving of the
+              Thinkin' Things collections. No wonder I grew up to love coding. I
+              think of coding as art that does stuff, and that was basically the
+              premise of this section of the game.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt2tuney.png" class="d-block w-60" alt="Play music with Tuney" />
+          </div>
+          <div class="col">
+            <h2 class="description">Tuney</h2>
+            <p class="description">
+              Thinkin' Things also encoraged making music.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt2tuney2.png" class="d-block w-60" alt="Play music with Tuney" />
+          </div>
+          <div class="col">
+            <h2 class="description">Tuney</h2>
+            <p class="description">You had to help Tuney play a tune.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt2band.png" class="d-block w-60" alt="The Thinkin' Things band" />
+          </div>
+          <div class="col">
+            <h2 class="description">Band</h2>
+            <p class="description">
+              There was also a neat little band to make beats.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/tt2fripple.png" class="d-block w-60" alt="frippletration" />
+          </div>
+          <div class="col">
+            <h2 class="description">Frippletration</h2>
+            <p class="description">
+              Frippletration was awesome. It's just a cute little memory game
+              with adorable fripples. I always assumed they were just cute
+              little aliens.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/BSOD.png" class="d-block w-60" alt="Old School Blue Screen of Death" />
+          </div>
+          <div class="col">
+            <h2 class="description">BSOD!</h2>
+            <p class="description">
+              I wanted to fire up one of my favorite childhood games, Spider-Man
+              Cartoon Maker. I ended up getting an old school blue screen of
+              death. I pushed the any key. Then did a restart.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/spidermancartoon.png"
+              class="d-block w-60"
+              alt="Spider-Man load screen"
+            />
+          </div>
+          <div class="col">
+            <h2 class="description">Yes! It's booting!</h2>
+            <p class="description">
+              This is the Spider-Man load screen. I spent hours. Years later I
+              still remember the colorful adventures I gave Spider Man.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/spidermangrittyapartment.png"
+              class="d-block w-60"
+              alt="Spider-Man has a gritty apartment"
+            />
+          </div>
+          <div class="col">
+            <h2 class="description">Spider Man's Apartment</h2>
+            <p class="description">
+              I always put Spider Man living in this apartment.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/spidermanspace.png"
+              class="d-block w-60"
+              alt="Spider-Man in space"
+            />
+          </div>
+          <div class="col">
+            <h2 class="description">He would run away to outer space</h2>
+            <p class="description">
+              When the silly drama in Spider Man's life got to be too much he
+              would just keep running through different backdrops. Eventually he
+              broke the laws of physics and somehow ran to live in space or the
+              ocean. It was silly but it was what the program was capable of and
+              it made kid me laugh. I still like making Spider-Man have silly drama in this
+              game. It never gets old.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="/images/doom95.png" class="d-block w-60" alt="Doom 95" />
+          </div>
+          <div class="col">
+            <h2 class="description">Doom 95</h2>
+            <p class="description">
+              I didn't have it is a kid. It's fun! As an adult I'm downloading a ton
+              of 90s goodies. Nothing else to say other than CLASSIC!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/VirtualBox_Windows 95 OSR 2.5_12_11_2022_20_09_59.png"
+              class="d-block w-60"
+              alt="Monopoly Windows 95"
+            />
+          </div>
+          <div class="col">
+            <h2 class="description">Monopoly</h2>
+            <p class="description">
+              This is a game I had on Windows 95. It was great. I spent
+              countless hours playing against the AI. Yes, I'm Bevis on this screenshot.
+            </p>
+            <p class="description">
+              This is my last slide. If you have some nostalgia I recommend
+              building one. It is an awesome weekend project. While I knew what
+              a virtual box is getting hands on experience is fun. I'm
+              downloading a bunch of games I wanted as a kid. I'm discovering
+              games I never heard of but would have loved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>  
+    </div>
+        <footer><p><a href="https://fervent-kare-2cbc33.netlify.app/" target="_blank">🤖<strong>Coded by: Candice Drave</strong>🤖</a></p></footer>
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
